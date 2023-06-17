@@ -1,0 +1,23 @@
+{
+  "name": "use-goto",
+  "version": "1.0.0",
+  "description": "allow to use the power of goto in JavaScript!",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kentaromiura/use-goto.git"
+  },
+  "keywords": [
+    "goto",
+    "JavaScript"
+  ],
+  "author": "Cristian Carlesso <@kentaromiura>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kentaromiura/use-goto/issues"
+  },
+  "homepage": "https://github.com/kentaromiura/use-goto#readme"
+}
