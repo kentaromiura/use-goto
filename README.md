@@ -6,7 +6,8 @@ Once again inspired by [Tsoding implementing goto in OCaml](https://www.youtube.
 It's worth to remember that `JavaScript` already has _GOTO-like_ functionality in the form of `break` and `continue` as I described in https://kentaromiura.wordpress.com/2014/05/25/hoppa-goto-style/, but I think this `use-*` utility, could actually be useful when handling errors.
 
 In the OCaml implementation above Exception has been abused for forcing code jumping around, I realized it's not needed if adding `return` in front of `goto` as per example:
-`
+
+```
 var {goto, start} = useGoto({
     loop(){
         if (i>=10) return goto('out');
@@ -19,7 +20,8 @@ var {goto, start} = useGoto({
     }
 });
 start();
-`
+```
+
 As you can see from the example above it's possible to use [object method definitions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Method_definitions)
 
 instead of having to use strings for labels, this way it looks just a bit better IMHO.
